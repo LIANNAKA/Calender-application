@@ -1,14 +1,28 @@
-# Little Calendar 🗓️
+# Little Calendar
 
-A little calendar widget app. This is part of the 2nd part of Nashallery's youtube tutorial on how to make your first electron ap.
+A simple desktop calendar app built with HTML, CSS, JavaScript, and ElectronJS. This project is a part of my YouTube tutorial series on building your first Electron application. 
 
 ## Tutorial video
 
-See the tutorial video here: (timestamp:)
+I posted a full YouTube tutorial walking through how to build this step-by-step from scratch, so this repo provides the code along the way.
 
-## Step-by-step instruction
+See Youtube video:
 
-### 1. Clone the repo
-```bash
-git clone https://github.com/nasha-wanich/little-calendar.git
-cd little-calendar
+## Design File
+
+Figma design file for this project: https://www.figma.com/design/iYQcS1Wk1f83vyh8ETsH8w/Little-Calendar?node-id=0-1&p=f
+
+## What's in this repo
+
+| File / Folder | Purpose |
+| --- | --- |
+| `index.html` | The main HTML layout for the calendar UI |
+| `styles.css` | All styles for the calendar interface |
+| `script.js` | Frontend JavaScript controlling calendar logic |
+| `main.js` | Electron main process — creates the desktop window and loads your UI |
+| `package.json` | Project metadata & dependencies |
+| `.gitignore` | Files and folders ignored by Git |
+| `assets/` | Images, icons, and other static assets |
+| `package-lock.json` | Auto-generated lock file for dependencies |
+
+## How to use
