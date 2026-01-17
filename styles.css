@@ -21,6 +21,7 @@ body {
 
 /* Main App Container */
 .app {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,14 +29,14 @@ body {
   gap: 0.5rem;
 
   width: 13.5rem;
-  padding: 1rem 1.0625rem;
+  padding: 1.5rem 1.0625rem; /* vertical, horizontal */
 
   background-image: url("assets/Outer-loaf.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
-  opacity: 0.8;
+  /* opacity: 0.8; */
 }
 
 /* Disable drag on interactive elements */
@@ -48,7 +49,7 @@ select {
 }
 
 /* Title */
-.title {
+/* .title {
   position: absolute;
   top: 0.9rem;
   left: 50%;
@@ -60,6 +61,20 @@ select {
   padding: 0.25rem 0.625rem;
   justify-content: center;
   align-items: center;
+} */
+#calendar-label {
+  position: absolute;
+  top: 2rem;              /* adjust inside inner loaf */
+  left: 52%;
+  transform: translateX(-50%);
+
+  font-size: 0.9rem;
+  letter-spacing: 0.35rem;
+  font-weight: 400;
+
+  text-align: center;
+  color: #9F4545;
+  text-shadow: 0 1px 0 rgba(0,0,0,0.15);
 }
 
 /* Calendar Container */
@@ -67,7 +82,7 @@ select {
   position: relative;
   display: flex;
   width: 11.25rem;
-  height: 10.0625rem;
+  height: 10.7rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -81,6 +96,11 @@ select {
 
 /* Day */
 #day {
+  /* position: absolute; */
+  top: 3rem;  
+  /* bottom: 1.2rem;     move up/down */
+  left: 50%;       /* horizontal reference */
+  /* transform: translateX(-50%); perfect centering */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,7 +108,7 @@ select {
   width: 11.25rem;
   height: 4.4375rem;
 
-  font-size: 4rem;
+  font-size: 2.4rem;
   font-weight: 400;
   line-height: 1;              /* ✅ important */
   letter-spacing: 0.3rem;      /* slightly reduced */
@@ -103,6 +123,11 @@ select {
 
 /* Month */
 #month {
+  position: absolute;
+  bottom: 1.4rem; 
+  left: 50%;
+  transform: translateX(-50%);
+
   width: 8.125rem;
 
   font-size: 2rem;
