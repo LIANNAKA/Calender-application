@@ -16,7 +16,6 @@ body {
   user-select: none;
   -webkit-app-region: drag;
   border-radius: 20px;
-  /* background: transparent; */
 }
 
 /* Main App Container */
@@ -36,7 +35,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 
-  /* opacity: 0.8; */
 }
 
 /* Disable drag on interactive elements */
@@ -64,7 +62,7 @@ select {
 } */
 #calendar-label {
   position: absolute;
-  top: 2rem;              /* adjust inside inner loaf */
+  top: 2rem;             
   left: 52%;
   transform: translateX(-50%);
 
@@ -110,15 +108,14 @@ select {
 
   font-size: 2.4rem;
   font-weight: 400;
-  line-height: 1;              /* ✅ important */
-  letter-spacing: 0.3rem;      /* slightly reduced */
+  line-height: 1;             
+  letter-spacing: 0.3rem;     
 
   font-family: 'Tomorrow', sans-serif;
   color: #9F4545;
   text-align: center;
 
-  /* ❌ REMOVE STROKE */
-  text-shadow: 0 1px 0 rgba(0,0,0,0.15); /* ✅ subtle depth */
+  text-shadow: 0 1px 0 rgba(0,0,0,0.15); 
 }
 
 /* Month */
@@ -132,14 +129,13 @@ select {
 
   font-size: 2rem;
   font-weight: 400;
-  line-height: 1;             /* ✅ important */
+  line-height: 1;             
   letter-spacing: 0.25rem;
 
   font-family: 'Tomorrow', sans-serif;
   color: #9F4545;
   text-align: center;
 
-  /* ❌ REMOVE STROKE */
   text-shadow: 0 1px 0 rgba(0,0,0,0.15);
 }
 
